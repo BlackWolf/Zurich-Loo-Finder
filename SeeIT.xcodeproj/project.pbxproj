@@ -1,0 +1,790 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3300220F23EA296E00615D99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300220E23EA296E00615D99 /* AppDelegate.swift */; };
+		3300221123EA296E00615D99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300221023EA296E00615D99 /* SceneDelegate.swift */; };
+		3300221323EA296E00615D99 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300221223EA296E00615D99 /* ContentView.swift */; };
+		3300221523EA297100615D99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3300221423EA297100615D99 /* Assets.xcassets */; };
+		3300221823EA297100615D99 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3300221723EA297100615D99 /* Preview Assets.xcassets */; };
+		3300221B23EA297100615D99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3300221923EA297100615D99 /* LaunchScreen.storyboard */; };
+		3300222023EA297200615D99 /* SeeIT WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3300221F23EA297200615D99 /* SeeIT WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3300222623EA297200615D99 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3300222423EA297200615D99 /* Interface.storyboard */; };
+		3300222823EA297200615D99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3300222723EA297200615D99 /* Assets.xcassets */; };
+		3300222F23EA297200615D99 /* SeeIT WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3300222E23EA297200615D99 /* SeeIT WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3300223423EA297200615D99 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300223323EA297200615D99 /* ContentView.swift */; };
+		3300223623EA297200615D99 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300223523EA297200615D99 /* HostingController.swift */; };
+		3300223823EA297200615D99 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300223723EA297200615D99 /* ExtensionDelegate.swift */; };
+		3300223A23EA297300615D99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3300223923EA297300615D99 /* Assets.xcassets */; };
+		3300223D23EA297300615D99 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3300223C23EA297300615D99 /* Preview Assets.xcassets */; };
+		3300225F23EA29AB00615D99 /* defaultnew2.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 3300224D23EA29AB00615D99 /* defaultnew2.gpx */; };
+		3300226023EA29AB00615D99 /* defaultnew2.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 3300224D23EA29AB00615D99 /* defaultnew2.gpx */; };
+		3300226123EA29AB00615D99 /* BathroomParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300224F23EA29AB00615D99 /* BathroomParser.swift */; };
+		3300226223EA29AB00615D99 /* BathroomParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300224F23EA29AB00615D99 /* BathroomParser.swift */; };
+		3300226323EA29AB00615D99 /* bathrooms.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3300225023EA29AB00615D99 /* bathrooms.csv */; };
+		3300226423EA29AB00615D99 /* bathrooms.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3300225023EA29AB00615D99 /* bathrooms.csv */; };
+		3300226523EA29AB00615D99 /* Bathroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300225123EA29AB00615D99 /* Bathroom.swift */; };
+		3300226623EA29AB00615D99 /* Bathroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300225123EA29AB00615D99 /* Bathroom.swift */; };
+		3300226723EA29AB00615D99 /* CSVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300225323EA29AB00615D99 /* CSVError.swift */; };
+		3300226823EA29AB00615D99 /* CSVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300225323EA29AB00615D99 /* CSVError.swift */; };
+		3300226923EA29AB00615D99 /* CSVWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300225423EA29AB00615D99 /* CSVWriter.swift */; };
+		3300226A23EA29AB00615D99 /* CSVWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300225423EA29AB00615D99 /* CSVWriter.swift */; };
+		3300226B23EA29AB00615D99 /* BinaryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300225523EA29AB00615D99 /* BinaryReader.swift */; };
+		3300226C23EA29AB00615D99 /* BinaryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300225523EA29AB00615D99 /* BinaryReader.swift */; };
+		3300226D23EA29AB00615D99 /* Legacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300225623EA29AB00615D99 /* Legacy.swift */; };
+		3300226E23EA29AB00615D99 /* Legacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300225623EA29AB00615D99 /* Legacy.swift */; };
+		3300226F23EA29AB00615D99 /* UnicodeIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300225723EA29AB00615D99 /* UnicodeIterator.swift */; };
+		3300227023EA29AB00615D99 /* UnicodeIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300225723EA29AB00615D99 /* UnicodeIterator.swift */; };
+		3300227123EA29AB00615D99 /* Endian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300225823EA29AB00615D99 /* Endian.swift */; };
+		3300227223EA29AB00615D99 /* Endian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300225823EA29AB00615D99 /* Endian.swift */; };
+		3300227323EA29AB00615D99 /* CSVRowDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300225923EA29AB00615D99 /* CSVRowDecoder.swift */; };
+		3300227423EA29AB00615D99 /* CSVRowDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300225923EA29AB00615D99 /* CSVRowDecoder.swift */; };
+		3300227523EA29AB00615D99 /* CSVReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300225A23EA29AB00615D99 /* CSVReader.swift */; };
+		3300227623EA29AB00615D99 /* CSVReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300225A23EA29AB00615D99 /* CSVReader.swift */; };
+		3300227923EA29AB00615D99 /* defaultnewmove.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 3300225C23EA29AB00615D99 /* defaultnewmove.gpx */; };
+		3300227A23EA29AB00615D99 /* defaultnewmove.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 3300225C23EA29AB00615D99 /* defaultnewmove.gpx */; };
+		3300227B23EA29AB00615D99 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300225D23EA29AB00615D99 /* LocationManager.swift */; };
+		3300227C23EA29AB00615D99 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300225D23EA29AB00615D99 /* LocationManager.swift */; };
+		3300227D23EA29AB00615D99 /* TransferManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300225E23EA29AB00615D99 /* TransferManager.swift */; };
+		3300227E23EA29AB00615D99 /* TransferManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300225E23EA29AB00615D99 /* TransferManager.swift */; };
+		3300228023EA29D000615D99 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300227F23EA29D000615D99 /* MapView.swift */; };
+		3300228223EA2A0000615D99 /* AngleCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300228123EA2A0000615D99 /* AngleCalculator.swift */; };
+		3300228523EA2A0600615D99 /* BathroomDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300228323EA2A0600615D99 /* BathroomDetailView.swift */; };
+		3300228623EA2A0600615D99 /* BathroomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300228423EA2A0600615D99 /* BathroomNavigationView.swift */; };
+		3366762C23EA2EC100254C9A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3366762B23EA2EC100254C9A /* Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3300222123EA297200615D99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3300220323EA296E00615D99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3300221E23EA297200615D99;
+			remoteInfo = "SeeIT WatchKit App";
+		};
+		3300223023EA297200615D99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3300220323EA296E00615D99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3300222D23EA297200615D99;
+			remoteInfo = "SeeIT WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3300224423EA297300615D99 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3300222F23EA297200615D99 /* SeeIT WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3300224823EA297300615D99 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3300222023EA297200615D99 /* SeeIT WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3300220B23EA296E00615D99 /* SeeIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeeIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3300220E23EA296E00615D99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3300221023EA296E00615D99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3300221223EA296E00615D99 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3300221423EA297100615D99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3300221723EA297100615D99 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3300221A23EA297100615D99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3300221C23EA297100615D99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3300221F23EA297200615D99 /* SeeIT WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SeeIT WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3300222523EA297200615D99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		3300222723EA297200615D99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3300222923EA297200615D99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3300222E23EA297200615D99 /* SeeIT WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SeeIT WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3300223323EA297200615D99 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3300223523EA297200615D99 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		3300223723EA297200615D99 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		3300223923EA297300615D99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3300223C23EA297300615D99 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3300223E23EA297300615D99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3300224D23EA29AB00615D99 /* defaultnew2.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = defaultnew2.gpx; sourceTree = "<group>"; };
+		3300224F23EA29AB00615D99 /* BathroomParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BathroomParser.swift; sourceTree = "<group>"; };
+		3300225023EA29AB00615D99 /* bathrooms.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bathrooms.csv; sourceTree = "<group>"; };
+		3300225123EA29AB00615D99 /* Bathroom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bathroom.swift; sourceTree = "<group>"; };
+		3300225323EA29AB00615D99 /* CSVError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVError.swift; sourceTree = "<group>"; };
+		3300225423EA29AB00615D99 /* CSVWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVWriter.swift; sourceTree = "<group>"; };
+		3300225523EA29AB00615D99 /* BinaryReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryReader.swift; sourceTree = "<group>"; };
+		3300225623EA29AB00615D99 /* Legacy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Legacy.swift; sourceTree = "<group>"; };
+		3300225723EA29AB00615D99 /* UnicodeIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnicodeIterator.swift; sourceTree = "<group>"; };
+		3300225823EA29AB00615D99 /* Endian.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endian.swift; sourceTree = "<group>"; };
+		3300225923EA29AB00615D99 /* CSVRowDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVRowDecoder.swift; sourceTree = "<group>"; };
+		3300225A23EA29AB00615D99 /* CSVReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVReader.swift; sourceTree = "<group>"; };
+		3300225C23EA29AB00615D99 /* defaultnewmove.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = defaultnewmove.gpx; sourceTree = "<group>"; };
+		3300225D23EA29AB00615D99 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		3300225E23EA29AB00615D99 /* TransferManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferManager.swift; sourceTree = "<group>"; };
+		3300227F23EA29D000615D99 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		3300228123EA2A0000615D99 /* AngleCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngleCalculator.swift; sourceTree = "<group>"; };
+		3300228323EA2A0600615D99 /* BathroomDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BathroomDetailView.swift; sourceTree = "<group>"; };
+		3300228423EA2A0600615D99 /* BathroomNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BathroomNavigationView.swift; sourceTree = "<group>"; };
+		3366762B23EA2EC100254C9A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3300220823EA296E00615D99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3300222B23EA297200615D99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3300220223EA296E00615D99 = {
+			isa = PBXGroup;
+			children = (
+				3300220D23EA296E00615D99 /* SeeIT */,
+				3300222323EA297200615D99 /* SeeIT WatchKit App */,
+				3300223223EA297200615D99 /* SeeIT WatchKit Extension */,
+				3300224C23EA29AB00615D99 /* Shared */,
+				3300220C23EA296E00615D99 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3300220C23EA296E00615D99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3300220B23EA296E00615D99 /* SeeIT.app */,
+				3300221F23EA297200615D99 /* SeeIT WatchKit App.app */,
+				3300222E23EA297200615D99 /* SeeIT WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3300220D23EA296E00615D99 /* SeeIT */ = {
+			isa = PBXGroup;
+			children = (
+				3300220E23EA296E00615D99 /* AppDelegate.swift */,
+				3300221023EA296E00615D99 /* SceneDelegate.swift */,
+				3300221223EA296E00615D99 /* ContentView.swift */,
+				3300227F23EA29D000615D99 /* MapView.swift */,
+				3300221423EA297100615D99 /* Assets.xcassets */,
+				3300221923EA297100615D99 /* LaunchScreen.storyboard */,
+				3300221C23EA297100615D99 /* Info.plist */,
+				3300221623EA297100615D99 /* Preview Content */,
+			);
+			path = SeeIT;
+			sourceTree = "<group>";
+		};
+		3300221623EA297100615D99 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3300221723EA297100615D99 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3300222323EA297200615D99 /* SeeIT WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				3300222423EA297200615D99 /* Interface.storyboard */,
+				3300222723EA297200615D99 /* Assets.xcassets */,
+				3300222923EA297200615D99 /* Info.plist */,
+			);
+			path = "SeeIT WatchKit App";
+			sourceTree = "<group>";
+		};
+		3300223223EA297200615D99 /* SeeIT WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3300223323EA297200615D99 /* ContentView.swift */,
+				3300228323EA2A0600615D99 /* BathroomDetailView.swift */,
+				3300228423EA2A0600615D99 /* BathroomNavigationView.swift */,
+				3300228123EA2A0000615D99 /* AngleCalculator.swift */,
+				3300223523EA297200615D99 /* HostingController.swift */,
+				3300223723EA297200615D99 /* ExtensionDelegate.swift */,
+				3366762B23EA2EC100254C9A /* Extensions.swift */,
+				3300223923EA297300615D99 /* Assets.xcassets */,
+				3300223E23EA297300615D99 /* Info.plist */,
+				3300223B23EA297300615D99 /* Preview Content */,
+			);
+			path = "SeeIT WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		3300223B23EA297300615D99 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3300223C23EA297300615D99 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3300224C23EA29AB00615D99 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				3311A03123EADC7200102E32 /* GPX Files */,
+				3300224E23EA29AB00615D99 /* Parsing */,
+				3300225D23EA29AB00615D99 /* LocationManager.swift */,
+				3300225E23EA29AB00615D99 /* TransferManager.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		3300224E23EA29AB00615D99 /* Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				3300225023EA29AB00615D99 /* bathrooms.csv */,
+				3300224F23EA29AB00615D99 /* BathroomParser.swift */,
+				3300225123EA29AB00615D99 /* Bathroom.swift */,
+				3300225223EA29AB00615D99 /* CSV */,
+			);
+			path = Parsing;
+			sourceTree = "<group>";
+		};
+		3300225223EA29AB00615D99 /* CSV */ = {
+			isa = PBXGroup;
+			children = (
+				3300225323EA29AB00615D99 /* CSVError.swift */,
+				3300225423EA29AB00615D99 /* CSVWriter.swift */,
+				3300225523EA29AB00615D99 /* BinaryReader.swift */,
+				3300225623EA29AB00615D99 /* Legacy.swift */,
+				3300225723EA29AB00615D99 /* UnicodeIterator.swift */,
+				3300225823EA29AB00615D99 /* Endian.swift */,
+				3300225923EA29AB00615D99 /* CSVRowDecoder.swift */,
+				3300225A23EA29AB00615D99 /* CSVReader.swift */,
+			);
+			path = CSV;
+			sourceTree = "<group>";
+		};
+		3311A03123EADC7200102E32 /* GPX Files */ = {
+			isa = PBXGroup;
+			children = (
+				3300224D23EA29AB00615D99 /* defaultnew2.gpx */,
+				3300225C23EA29AB00615D99 /* defaultnewmove.gpx */,
+			);
+			path = "GPX Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3300220A23EA296E00615D99 /* SeeIT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3300224923EA297300615D99 /* Build configuration list for PBXNativeTarget "SeeIT" */;
+			buildPhases = (
+				3300220723EA296E00615D99 /* Sources */,
+				3300220823EA296E00615D99 /* Frameworks */,
+				3300220923EA296E00615D99 /* Resources */,
+				3300224823EA297300615D99 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3300222223EA297200615D99 /* PBXTargetDependency */,
+			);
+			name = SeeIT;
+			productName = SeeIT;
+			productReference = 3300220B23EA296E00615D99 /* SeeIT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3300221E23EA297200615D99 /* SeeIT WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3300224523EA297300615D99 /* Build configuration list for PBXNativeTarget "SeeIT WatchKit App" */;
+			buildPhases = (
+				3300221D23EA297200615D99 /* Resources */,
+				3300224423EA297300615D99 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3300223123EA297200615D99 /* PBXTargetDependency */,
+			);
+			name = "SeeIT WatchKit App";
+			productName = "SeeIT WatchKit App";
+			productReference = 3300221F23EA297200615D99 /* SeeIT WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		3300222D23EA297200615D99 /* SeeIT WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3300224123EA297300615D99 /* Build configuration list for PBXNativeTarget "SeeIT WatchKit Extension" */;
+			buildPhases = (
+				3300222A23EA297200615D99 /* Sources */,
+				3300222B23EA297200615D99 /* Frameworks */,
+				3300222C23EA297200615D99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SeeIT WatchKit Extension";
+			productName = "SeeIT WatchKit Extension";
+			productReference = 3300222E23EA297200615D99 /* SeeIT WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3300220323EA296E00615D99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Mario Schreiner";
+				TargetAttributes = {
+					3300220A23EA296E00615D99 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					3300221E23EA297200615D99 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					3300222D23EA297200615D99 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 3300220623EA296E00615D99 /* Build configuration list for PBXProject "SeeIT" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3300220223EA296E00615D99;
+			productRefGroup = 3300220C23EA296E00615D99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3300220A23EA296E00615D99 /* SeeIT */,
+				3300221E23EA297200615D99 /* SeeIT WatchKit App */,
+				3300222D23EA297200615D99 /* SeeIT WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3300220923EA296E00615D99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3300226323EA29AB00615D99 /* bathrooms.csv in Resources */,
+				3300221B23EA297100615D99 /* LaunchScreen.storyboard in Resources */,
+				3300225F23EA29AB00615D99 /* defaultnew2.gpx in Resources */,
+				3300221823EA297100615D99 /* Preview Assets.xcassets in Resources */,
+				3300227923EA29AB00615D99 /* defaultnewmove.gpx in Resources */,
+				3300221523EA297100615D99 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3300221D23EA297200615D99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3300222823EA297200615D99 /* Assets.xcassets in Resources */,
+				3300222623EA297200615D99 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3300222C23EA297200615D99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3300226023EA29AB00615D99 /* defaultnew2.gpx in Resources */,
+				3300227A23EA29AB00615D99 /* defaultnewmove.gpx in Resources */,
+				3300223D23EA297300615D99 /* Preview Assets.xcassets in Resources */,
+				3300226423EA29AB00615D99 /* bathrooms.csv in Resources */,
+				3300223A23EA297300615D99 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3300220723EA296E00615D99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3300226123EA29AB00615D99 /* BathroomParser.swift in Sources */,
+				3300228023EA29D000615D99 /* MapView.swift in Sources */,
+				3300226723EA29AB00615D99 /* CSVError.swift in Sources */,
+				3300220F23EA296E00615D99 /* AppDelegate.swift in Sources */,
+				3300226F23EA29AB00615D99 /* UnicodeIterator.swift in Sources */,
+				3300227323EA29AB00615D99 /* CSVRowDecoder.swift in Sources */,
+				3300227123EA29AB00615D99 /* Endian.swift in Sources */,
+				3300226923EA29AB00615D99 /* CSVWriter.swift in Sources */,
+				3300221123EA296E00615D99 /* SceneDelegate.swift in Sources */,
+				3300227523EA29AB00615D99 /* CSVReader.swift in Sources */,
+				3300226D23EA29AB00615D99 /* Legacy.swift in Sources */,
+				3300227B23EA29AB00615D99 /* LocationManager.swift in Sources */,
+				3300227D23EA29AB00615D99 /* TransferManager.swift in Sources */,
+				3300226B23EA29AB00615D99 /* BinaryReader.swift in Sources */,
+				3300226523EA29AB00615D99 /* Bathroom.swift in Sources */,
+				3300221323EA296E00615D99 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3300222A23EA297200615D99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3300228623EA2A0600615D99 /* BathroomNavigationView.swift in Sources */,
+				3300226223EA29AB00615D99 /* BathroomParser.swift in Sources */,
+				3300228223EA2A0000615D99 /* AngleCalculator.swift in Sources */,
+				3300226823EA29AB00615D99 /* CSVError.swift in Sources */,
+				3300223623EA297200615D99 /* HostingController.swift in Sources */,
+				3300227023EA29AB00615D99 /* UnicodeIterator.swift in Sources */,
+				3300227423EA29AB00615D99 /* CSVRowDecoder.swift in Sources */,
+				3366762C23EA2EC100254C9A /* Extensions.swift in Sources */,
+				3300227223EA29AB00615D99 /* Endian.swift in Sources */,
+				3300226A23EA29AB00615D99 /* CSVWriter.swift in Sources */,
+				3300223423EA297200615D99 /* ContentView.swift in Sources */,
+				3300227623EA29AB00615D99 /* CSVReader.swift in Sources */,
+				3300226E23EA29AB00615D99 /* Legacy.swift in Sources */,
+				3300228523EA2A0600615D99 /* BathroomDetailView.swift in Sources */,
+				3300227C23EA29AB00615D99 /* LocationManager.swift in Sources */,
+				3300227E23EA29AB00615D99 /* TransferManager.swift in Sources */,
+				3300226C23EA29AB00615D99 /* BinaryReader.swift in Sources */,
+				3300226623EA29AB00615D99 /* Bathroom.swift in Sources */,
+				3300223823EA297200615D99 /* ExtensionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3300222223EA297200615D99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3300221E23EA297200615D99 /* SeeIT WatchKit App */;
+			targetProxy = 3300222123EA297200615D99 /* PBXContainerItemProxy */;
+		};
+		3300223123EA297200615D99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3300222D23EA297200615D99 /* SeeIT WatchKit Extension */;
+			targetProxy = 3300223023EA297200615D99 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3300221923EA297100615D99 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3300221A23EA297100615D99 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3300222423EA297200615D99 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3300222523EA297200615D99 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3300223F23EA297300615D99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3300224023EA297300615D99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3300224223EA297300615D99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SeeIT WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = ZJ3AN992JC;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "SeeIT WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.marioschreiner.SeeIT.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		3300224323EA297300615D99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SeeIT WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = ZJ3AN992JC;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "SeeIT WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.marioschreiner.SeeIT.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		3300224623EA297300615D99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZJ3AN992JC;
+				IBSC_MODULE = SeeIT_WatchKit_Extension;
+				INFOPLIST_FILE = "SeeIT WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = de.marioschreiner.SeeIT.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		3300224723EA297300615D99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZJ3AN992JC;
+				IBSC_MODULE = SeeIT_WatchKit_Extension;
+				INFOPLIST_FILE = "SeeIT WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = de.marioschreiner.SeeIT.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		3300224A23EA297300615D99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SeeIT/Preview Content\"";
+				DEVELOPMENT_TEAM = ZJ3AN992JC;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SeeIT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.marioschreiner.SeeIT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3300224B23EA297300615D99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SeeIT/Preview Content\"";
+				DEVELOPMENT_TEAM = ZJ3AN992JC;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SeeIT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.marioschreiner.SeeIT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3300220623EA296E00615D99 /* Build configuration list for PBXProject "SeeIT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3300223F23EA297300615D99 /* Debug */,
+				3300224023EA297300615D99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3300224123EA297300615D99 /* Build configuration list for PBXNativeTarget "SeeIT WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3300224223EA297300615D99 /* Debug */,
+				3300224323EA297300615D99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3300224523EA297300615D99 /* Build configuration list for PBXNativeTarget "SeeIT WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3300224623EA297300615D99 /* Debug */,
+				3300224723EA297300615D99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3300224923EA297300615D99 /* Build configuration list for PBXNativeTarget "SeeIT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3300224A23EA297300615D99 /* Debug */,
+				3300224B23EA297300615D99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3300220323EA296E00615D99 /* Project object */;
+}
